@@ -10,6 +10,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -110,6 +112,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
+  
 }
 @media (min-width: 1200px) {
   h4, .h4 {
@@ -129,6 +132,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
   color: #000;
+  font-weight: bold ;
 }
 
 abbr[title],
@@ -568,11 +572,20 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid-productos {
   max-width: 100%;
-  height: auto;
+  height: 32em;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: 10em;
+}
+
+.img-fluid-1 {
+  max-width: 100%;
+  height: 15em;
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -6902,6 +6915,7 @@ textarea.form-control-lg {
 .my-3 {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
+  color: #865439;
 }
 
 .my-4 {
@@ -10957,7 +10971,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
+  color: #231E23;
+  font-weight: bold;
   background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10976,6 +10991,7 @@ header.masthead .masthead-heading {
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
+  color: #F9F9F9;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -11033,8 +11049,18 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 0;
+
+}
+
+.portfolio-caption-heading {
+  font-weight: bold;
+  color: #865439;
+}
+
+.portfolio-caption-subheading {
+  color: #865439;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
@@ -11138,7 +11164,6 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11167,8 +11192,10 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
-  color: inherit;
+  color: #865439;
 }
+
+timeline
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
 }
